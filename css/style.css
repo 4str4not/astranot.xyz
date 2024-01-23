@@ -1,0 +1,116 @@
+/*-------- Common ----------------------------------------*/
+.ratio {
+  max-width: 700px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  color: white;
+  background-color: #002241;
+  font-family: "Ubuntu";
+  margin-right: 15px;
+  margin-left: 15px;
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+p,
+h3,
+table {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+p,
+.dscp {
+  font-family: "Recursive";
+}
+
+h1 {
+  margin-bottom: 50px;
+  margin-top: 80px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+/*-------- Header ----------------------------------------*/
+
+header {
+  display: inline-block;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.logo {
+  background-image: url("../assets/favicon/logo.svg");
+  background-size: 85px;
+  height: 18px;
+  width: 82px;
+  float: right;
+}
+
+.logo:hover {
+  opacity: 0.4;
+}
+
+/*-------- Project ---------------------------------------*/
+
+.projects {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 30px;
+  height: auto;
+}
+
+.grid-item {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Responsive styling using media queries */
+@media screen and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*-------- Post List -------------------------------------*/
+.date {
+  color: grey;
+}
+
+/*-------- Post ------------------------------------------*/
+
+/*-------- Footer ----------------------------------------*/
+
+footer {
+  margin-top: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#copyright {
+  text-align: left;
+  opacity: 70%;
+  color: #7d7d7d;
+  font-weight: 600;
+  font-size: 15px;
+}
